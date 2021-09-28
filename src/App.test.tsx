@@ -12,4 +12,9 @@ describe("Counter Testing", () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find("h1").text()).toContain("This is the counter app");
   });
+
+  test("render a button with a text of 'increment'", () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find("#increment-btn").text()).toBe("Increment");
+  });
 });

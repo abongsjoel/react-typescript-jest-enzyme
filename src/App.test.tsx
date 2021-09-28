@@ -1,9 +1,6 @@
 import App from "./App";
 
-import { configure, shallow, ShallowWrapper } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
-
-configure({ adapter: new Adapter() });
+import { shallow, ShallowWrapper } from "enzyme";
 
 describe("Counter Testing", () => {
   let wrapper: ShallowWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;

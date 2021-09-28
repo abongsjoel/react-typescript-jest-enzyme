@@ -11,11 +11,16 @@ describe("Counter Testing", () => {
   beforeEach(() => {
     wrapper = shallow(<App />);
   });
+
   test("renders the title of counter", () => {
     expect(wrapper.find("h1").text()).toContain("This is the counter app");
   });
 
   test("render a button with a text of 'increment'", () => {
     expect(wrapper.find("#increment-btn").text()).toBe("Increment");
+  });
+
+  test("render the initial value of state in a div", () => {
+    expect(wrapper.find("#counter-value").text()).toBe("0");
   });
 });

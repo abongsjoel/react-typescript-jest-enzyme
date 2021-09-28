@@ -1,3 +1,8 @@
+# Unit Testing React, TypeScript, Jest and Enzyme
+
+Project created while learning unit testing with React, TypeScript, Jest and Enzyme.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
